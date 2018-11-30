@@ -1,0 +1,21 @@
+<html>
+  <head>
+      <title> function basic  </title>
+         <script type="text/javascript">
+            function sayhello(name, age)
+             {
+			 if(name== "" || age=="" )
+			 return false;
+			 document.write(name +"is" +age "year old");
+			 }		
+         </script>			 
+   </head>
+      <body>
+	      <p> press the button to call the function </p>
+		  <form>
+		     <input name = "t1" placeholder="Enter name" /> <br/>
+			 <input name = "t2" placeholder="Enter age" /> <br/>
+			 <input type= "button" onclick="sayhello(t1.value,t2.value)" value="Say Hello" />
+		  </form>
+	  </body>
+</html>

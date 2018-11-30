@@ -1,0 +1,27 @@
+<html>
+  <head>
+      <title> atm pin </title>
+   </head>
+      <body>
+	    <script language="javascript" type="text/javascript">
+	     var actualpin="5433";
+         var pin;
+         var count=0;
+         
+            do
+              {
+			  pin = prompt("enter your PIN","****");
+			  count++;
+			  }while(pin!=actualpin && count<3);
+               if(pin==actualpin)
+                   {
+				   document.write("welcome user");
+				 
+				   }
+               else
+                   {
+				   document.write("your card is blocked");
+				   }			   
+		</script>
+	  </body>
+</html>

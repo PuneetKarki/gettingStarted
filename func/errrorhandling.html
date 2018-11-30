@@ -1,0 +1,30 @@
+<html>
+  <head>
+      <title> error hanndling  </title>
+         <script type="text/javascript">
+           function funccc()
+		{
+		  var a=100;
+		   try
+		   {
+		   var s =a.toUpperCase() ;
+		    alert("the value of variable a is   " +s);
+		   }
+		   catch(e)
+		   {
+		    alert(e);
+		   }
+		   finally
+		   {
+		   alert("the message will still execute");
+		   }
+		 }  
+		 </script>
+		
+	  <body>
+	  <p> click the following button to see the comment</p>
+	  <form>
+	  <input type="button" onclick="funccc()" value="click here"  />
+	  </form>
+	  </body>
+</html>

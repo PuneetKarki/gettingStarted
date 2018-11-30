@@ -1,0 +1,35 @@
+</html>
+  <head>
+      <title> ANIMATION</title>
+	  <h1> Random try </h1>
+	  <script type="text/javascript">
+	  var arr= new Array("1.jpg" , "2.jpg", "3.jpg", "4.jpg", "5.jpg");
+	  var i=1;
+	  var ref;
+	  
+	  function library()
+	  {
+	  document.images[0].src=arr[i];
+	  i++;
+	  if(i>4)
+	  i=0;
+	  }
+	  function start()
+	  {
+	  ref=setInterval("library()",1000);
+	  }
+	  function stop()
+	  {
+	  clearInterval(ref);
+	  }
+	  </script>
+   </head>
+   
+      <body onload="start()">
+	  <image src="1.jpg" name="img1" onmouseover="stop()" onmouseout="start()" />
+	  
+	   <p>move the pointer to the img to stop the slide show and vice versa</p>
+		
+	  </body>
+
+</html>

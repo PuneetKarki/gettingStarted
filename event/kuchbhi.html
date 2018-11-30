@@ -1,0 +1,34 @@
+</html>
+  <head>
+      <title> event</title>
+	  <h1> Random try </h1>
+	  <script type="text/javascript">
+	 
+	  function Mouseover()
+	  {
+	  document.images["img1"].src="lambo.png"
+	  }
+	  function Mouseout()
+	  {
+	  document.images["img1"].src="ferrari.png"
+	  }
+	   function load()
+	  {
+	  document.images["img1"].src="ferrari.png"
+	  }
+	  </script>
+   </head>
+      <body>
+	  <form>
+	         
+		     <input type = "button" onclick="load()" value="click here to see the image"/>
+		 
+<p> then drag the pointer over the image to see different image</p>
+	          <img name ="img1" onmouseover="Mouseover()" onmouseout="Mouseout"  />
+	    
+		
+		</form>
+		
+	  </body>
+
+</html>

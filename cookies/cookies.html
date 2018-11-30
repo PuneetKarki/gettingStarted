@@ -1,0 +1,29 @@
+</html>
+  <head>
+      <title>  page redirect</title>
+	 
+	  <script type="text/javascript">
+	  
+	 function writecookie()
+     {
+	   if(document.myform.customer.value=="")
+	   {
+	   alert("Enter the name");
+	   return;
+	   }
+	 var cookievalue=escape(document.myform.customer.value) +";" ;
+     document.cookie="name=" +cookievalue;
+     document.write("setting cookies:" +"name" +cookievalue);	 
+	 }
+	
+	 
+	 </script>
+   </head>
+ <body>
+ <form name= "myform " action= "">
+Enter name: <input type= "text" name="customer" />
+<input type="button" onclick ="writecookie()" value= "Set Cookie"  />
+</form>
+ 
+ </body>
+</html>

@@ -1,0 +1,25 @@
+</html>
+  <head>
+      <title> event</title>
+	  <h1>drag the pointer on ferrari to see lamborghini </h1>
+	  <script type="text/javascript">
+	  
+	  function Mouseover()
+	  {
+	  document.images["img1"].src="lambo.png"
+	  }
+	  function Mouseout()
+	  {
+	  document.images["img1"].src="ferrari.png"
+	  }
+	   function load()
+	  {
+	  document.images["img1"].src="ferrari.png"
+	  }
+	  </script>
+   </head>
+      <body onload="load()">
+	  <img name ="img1" onmouseover="Mouseover()" onmouseout="Mouseout"  />
+	    
+	  </body>
+</html>
