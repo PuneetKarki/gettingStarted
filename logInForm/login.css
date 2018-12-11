@@ -1,0 +1,55 @@
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left {
+  left: 0;
+  background-color: #04B3D6;   
+}/*control the left side*/
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: white;
+}
+.centered {
+	      position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center-left;
+}
+
+
+h1{
+	font-size: 30px;
+	text-align: right;
+}
+
+button{
+	float:right;
+	background-color: #04B3D6;
+	border: none;
+	color: white;
+	padding: 15px 35px;
+	text-align: center;
+	font-size: 16px;
+	display: inline-block;
+	margin:auto;
+	width:50%;
+}
+	
+	p{
+	   text-align:center-right;
+font-size:20px	   
+
+	}
+	
+	li{
+		font-size:25px;
+	}

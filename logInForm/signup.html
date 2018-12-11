@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+   <meta charset ="utf-8">
+  <title> Sign Up </title>
+       <script type="text/javascript">
+	   function logsign()
+	   {
+	  
+	    if(document.myForm.Name.value=="")
+	     {
+		 alert("Enter your Name");
+		  document.myForm.Name.focus();
+		 return false;
+		 }
+		 
+		 
+		 var email=document.myForm.Email.value;
+		 var checkemail= /^[a-zA-Z0-9._]{3,}@[a-zA-Z0-9]{3,}.{1}[comcoin.]{2,5}$/;
+		 
+		 if(document.myForm.Email.value=="")
+			  {
+			   alert("Enter your Email");
+			   document.myForm.Email.focus();
+			   return false;
+			  }
+			  
+			  if(checkemail.test(email))
+			  {
+			  document.myForm.Email.value=="";
+			  }
+			  else
+			  {
+			  alert("Invalid Email:xyz@xyz.com or xyz@xyz.co.in");
+			  }
+			  
+			 var a=document.myForm.Password.value;
+			 var b=document.myForm.Passwordss.value;
+             var checka=/^(?=.*[0-9])(?=.*[~!@#$%^&*])[a-zA-Z~!@#$%^&*0-9]{8,16}$/ ;
+			 
+		      if(a=="")
+              {alert("Enter the password")
+              return false;
+		      }		
+			  if(checka.test(a))
+			  {
+			  document.myForm.Password.value=="";
+			  }
+		     else
+			 {
+			 alert("Invalid password:A password must contain atleast one number , a special character and length should be atleast 8 but not more than 16");
+			 return false;
+			 }
+		
+		 
+		 if(b=="")
+		 {
+		 alert("Retype your password");
+		 return false;
+		 }
+		 
+		 if(a!=b)
+		 {
+		 alert("password you typed does not match ");
+		 return false;
+		 }
+		 
+		 return(true);
+		 
+	     }
+	   </script> 
+	  </head>
+		<h1>Create Your Account</h1>
+	
+<form action="https://en.wikipedia.org/wiki/History_of_India" name="myForm" onsubmit="return(logsign())"> 
+
+<input type="text" name="Name" placeholder="Name" />  </br> </br> </br>
+
+<input type="Email" name="Email" placeholder="Email" /></br> </br> </br>
+
+<input type="password" name="Password" placeholder="Password" /></br> </br> </br>
+
+<input type="password" name="Passwordss" placeholder="Confirm Password" /> </br> </br> </br>
+
+<input type="submit" value="Next"/>
+</form>
+</body>
+</html>

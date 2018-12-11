@@ -21,7 +21,7 @@
 			  
 			   if(document.myForm.Zip.value=="" ||
 			   isNaN(document.myForm.Zip.value)||
-			   document.myForm.Zip.value !="5")
+			   document.myForm.Zip.value <5)
 			   
 			  {
 			   alert("Please enter your five digit zip code *****");
@@ -29,7 +29,7 @@
 			   return false;
 			  }
 			  
-    		   if(document.myForm.Country.value=="-1")
+    		   if(document.myForm.country.value==-1)
 			   {
 			   alert("Provide yur Country name");
 			   return false;
@@ -51,8 +51,8 @@
   </tr>
   
  <tr>
-    <td align="right">Email</td>
-	<td> <input ="text" name="Email" />   </td>
+    <td align="right" >Email</td>
+	<td> <input ="text" name="Email" type="email" />   </td>
   </tr>
   
   <tr>
